@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta charset="UTF-8">
 <meta name="author" content="advoiDhbiju">
-<link rel="icon" href="https://vvnvwg.bn.files.1drv.com/y4mImafSRsWXB_BQ_-goM4B4TjeJ9tjAlS_tsOFuY4XAOK1WhNVhxDOxLg7tpvLcjqvGK9mturw3hKg4APy-dvUQR8At9yfQAbh66gSk55zq1mVLjY3jBHT6Gnha1pjeNEOiFrVMjWorT02kFiWCk9G3-DsVICLKhD2wk4wMeBBrx-5tdtbdncdqHNU0ijteuUOBCere9ZCJEDHYkkVGrb2Tw?width=90&height=90&cropmode=none" type="image/icon-x">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Montserrat:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&family=Teko:wght@300&display=swap" rel="stylesheet">
 <style>
+* {
+  box-sizing: border-box;
+}
 #body {
 margin:0;
 background-color:#202424;
@@ -48,9 +49,11 @@ overflow:hidden;
 }
 li.bc {
 float:left;
+display:flex;
+align-items: center;
 }
 li.bc a {
- display:inline-block;
+ display: inline-block;
  padding:7px 10px;
  text-decoration:none;
  text-align:center;
@@ -64,12 +67,11 @@ li.bc a:hover {
 div#bar {       /*SIDE NAV IS HERE, YO !*/
 float: left;
 display:block;
-height:500px;
 width:0;
 height:100%;
 background:#1f2b2b;
 color:#fff;
-transition:1.0s;
+transition: 0.2s;
 overflow:hidden;
 z-index: 1;
 position:fixed;
@@ -86,43 +88,34 @@ div#bar .batcls {
 	margin:10px 5px 0 0 ;
 	font-size:30px;
 	}		
-	
-
-			
 #header {
 	color:ivory;
-											}	
-				h1.a {
-								padding:0;
-								font-family:'Teko',sans-serif;
-								font-size:58px;
-								text-align:center;
-								letter-spacing:1px;
-								color:red;
-								
-								
-								}
-								a.imanav {
-				border-radius:3px;
-				padding: 0;
+		}	
+h1.a {
+	padding:0;
+	font-family:'Teko',sans-serif;
+	font-size:58px;
+	text-align:center;
+	letter-spacing:1px;
+	color:red;
+		}
+a.imanav {
+ border-radius:3px;
+ padding-top: 10px;
 				}
-				
-				/*theme buttons*/
-				.bat {
-								background-color:#1f2b2b;
-								color:#fff;
-								border:0;
-								padding:7px;
-								}
-				
-								.bat1 {
-													background-color:grey;
-								color:#fff;
-								border:0;
-								padding:7px;
-								
-								}
-								
+/*theme buttons*/
+.bat {
+	background-color:#1f2b2b;
+	color:#fff;
+	border:0;
+	padding:7px;
+		}
+.bat1 {
+	background-color:grey;
+	color:#fff;
+	border:0;
+	padding:7px;
+			}
 div.im {
 	background-image:url("https://www.dropbox.com/s/j1hlw4o4jk8797j/maxresdefault.jpg?dl=1");
 	min-height:300px;
@@ -139,7 +132,7 @@ p.a{
 #nur {
   font-family:'Teko',sans-serif;
 	text-align:justify;
-	font-size:1.7em;
+	font-size:1.5em;
 	border-bottom:1px solid tomato;
 	color:white;
 		}
@@ -149,7 +142,7 @@ p {
 	}
 span {
   color:red
-			}
+		}
 span.h {
 	letter-spacing:8px;
 	color:#fff;
@@ -159,11 +152,6 @@ span.h {
 	font-weight:bold;
 	text-shadow:1px 1.5px 0.5px rgba(100,100,100,1.0);
 				}	
-p.elite {
-												font-size:15px;		
-																											text-align:justify;																								
-font-family: 'Special Elite', cursive;
-																											}
 div.nurm {
   background-image:url("https://vvpiqa.bn.files.1drv.com/y4mrK5VHW7mS6RDtz_XpVdYtAokywlotwmmSiABP9NpYJtvTwzxZk8rvSENJenXt-SszYgRl_E3aLO1JCFyVvASxiiLUxzaU-J8A-NY1GU4e3C0Cf0e1dbAYuYjx0IDNaaTSdC1U438QoczLibQ-DRsr19Or_BVeXE5s1E2tf63PVRIsek3C6WCVtwRcnYw1LRiicVbkRl0jhD1WWYJ_f4DpQ?width=1040&height=1179&cropmode=none");
 	height:500px;
@@ -173,11 +161,11 @@ div.nurm {
 			}
 footer.fac {
 	padding:35px;
+	font-size: 8pt;
 	color:white;
 	text-align:center;
 	background-color:#343434;
   		}	
-
 footer.fac a {
 text-decoration:none;
 background:#dcdcdc;
@@ -198,7 +186,7 @@ font-size:25px;
 		<ul class="ab">
 		<li class="bc">
 		<a class="imanav" href="#home">
-		<img  src="https://vvnhza.bn.files.1drv.com/y4moyJhKYbiMR-0cffmjw3QePKyk2zpn6aoi6cdwGHHZEpVz2arBMjdu-QJ_1qIir4322tpK7fw1X5kcoP1A249l4Wz6dES51CsjAYjEDSlXEfTo09oycDagPr5vVDYWIfUQuri_WO9Aq8suk8zmyHK2VEsfhS-th-BdsACG8YL-UHUXze9gvmErn7IhIXEFSoPnLT-teFzbP3PgbX0iAba1g?width=176&height=164&cropmode=none" height="26" width="40" onclick="bar()">
+		<img  src="https://vvnhza.bn.files.1drv.com/y4moyJhKYbiMR-0cffmjw3QePKyk2zpn6aoi6cdwGHHZEpVz2arBMjdu-QJ_1qIir4322tpK7fw1X5kcoP1A249l4Wz6dES51CsjAYjEDSlXEfTo09oycDagPr5vVDYWIfUQuri_WO9Aq8suk8zmyHK2VEsfhS-th-BdsACG8YL-UHUXze9gvmErn7IhIXEFSoPnLT-teFzbP3PgbX0iAba1g?width=176&height=164&cropmode=none" height="20" width="40" onclick="bar()">
 		</a>
 		<li class="bc"><a href="#home">B-126</a></li>
 		<li class="bc"><a href="#home">USA</a></li>
